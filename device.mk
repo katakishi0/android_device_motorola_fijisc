@@ -6,3 +6,17 @@
 #
 
 LOCAL_PATH := device/motorola/fijisc
+
+
+# TWRP required tools & fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd \
+    e2fsck \
+    resize2fs \
+    mke2fs \
+    mkfs.f2fs \
+    fsck.f2fs \
+    sload.f2fs \
+    libkeymaster4 \
+    libgatekeeper
+

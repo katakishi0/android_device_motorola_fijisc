@@ -102,3 +102,23 @@ TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
+BOARD_USES_RECOVERY_AS_BOOT := false
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+TW_INCLUDE_FASTBOOTD := true
+TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_FBE := true
+TW_USE_FSCRYPT_POLICY := 1
+TW_EXCLUDE_APEX := false
+TW_NO_REBOOT_BOOTLOADER := true
+TARGET_USES_MKE2FS := true
+
+
+# --- Device-specific TODOs (verify on hardware) ---
+# TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
+# TW_MAX_BRIGHTNESS := 255
+# TW_DEFAULT_BRIGHTNESS := 128
+# If touch is inverted or needs special input:
+# TW_INPUT_BLACKLIST := "hbtp_vm"
+# TW_INPUT_BLACKLIST := "synaptics_dsx"
