@@ -1,3 +1,1 @@
-add_lunch_combo omni_fijisc-user
-add_lunch_combo omni_fijisc-userdebug
-add_lunch_combo omni_fijisc-eng
+# Obsolete, moved lunch combos to AndroidProducts.mk
